@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORFIT - Tienda Deportiva</title>
+    <link rel="stylesheet" href="store.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SPORFIT</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Inicio</a>
+                <a href="#hombres">Hombres</a>
+                <a href="#mujeres">Mujeres</a>
+                <a href="#accesorios">Accesorios</a>
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" id="logout-btn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>SPORFIT</h2>
+                <p>Tu estilo deportivo, tu manera</p>
+            </div>
+        </section>
+
+        <!-- Sección Hombres -->
+        <section id="hombres" class="products">
+            <h2>Ropa para Hombres</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="./0001.jpg" alt="Camiseta Deportiva">
+                    <div class="product-info">
+                        <h3>Camiseta Deportiva</h3>
+                        <p class="price">$35.000</p>
+                        <button class="add-to-cart" data-id="h1">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="./0002.jpg" alt="Shorts Deportivos">
+                    <div class="product-info">
+                        <h3>Shorts Deportivos</h3>
+                        <p class="price">$40.000</p>
+                        <button class="add-to-cart" data-id="h2">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="./0003.jpg" alt="Sudadera con Capucha">
+                    <div class="product-info">
+                        <h3>Conjunto</h3>
+                        <p class="price">$70.000</p>
+                        <button class="add-to-cart" data-id="h3">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="./0004.jpg" alt="Pantalón Deportivo">
+                    <div class="product-info">
+                        <h3>Pantalón Deportivo</h3>
+                        <p class="price">$45.000</p>
+                        <button class="add-to-cart" data-id="h4">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Mujeres -->
+        <section id="mujeres" class="products">
+            <h2>Ropa para Mujeres</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="./01.jpg" alt="Leggings Deportivos">
+                    <div class="product-info">
+                        <h3>Leggings Deportivos</h3>
+                        <p class="price">$35.000</p>
+                        <button class="add-to-cart" data-id="m1">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="./02.jpg" alt="Top Deportivo">
+                    <div class="product-info">
+                        <h3>camisas oversize</h3>
+                        <p class="price">$25.000</p>
+                        <button class="add-to-cart" data-id="m2">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="./03.jpg" alt="Conjunto Deportivo">
+                    <div class="product-info">
+                        <h3>Conjunto Deportivo</h3>
+                        <p class="price">$60.000</p>
+                        <button class="add-to-cart" data-id="m3">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="./04.jpg" alt="Chaqueta Deportiva">
+                    <div class="product-info">
+                        <h3>Leggins </h3>
+                        <p class="price">$45.000</p>
+                        <button class="add-to-cart" data-id="m4">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Accesorios -->
+        <section id="accesorios" class="products">
+            <h2>AL POR MAYOR </h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="./mayor01.jpg" alt="Mochila Deportiva">
+                    <div class="product-info">
+                        <h3>suerte hombres</h3>
+                        <p class="price">$30.000</p>
+                        <button class="add-to-cart" data-id="a1">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="./mayor02.jpg" alt="Gorra Deportiva">
+                    <div class="product-info">
+                        <h3>bluzas damas </h3>
+                        <p class="price">$20.000</p>
+                        <button class="add-to-cart" data-id="a2">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="./mayor03.jpg" alt="Botella de Agua">
+                    <div class="product-info">
+                        <h3>conjuntos </h3>
+                        <p class="price">$50.000</p>
+                        <button class="add-to-cart" data-id="a3">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="./mayor04.jpg" alt="Toalla Deportiva">
+                    <div class="product-info">
+                        <h3>conjuntos completo</h3>
+                        <p class="price">$55.000</p>
+                        <button class="add-to-cart" data-id="a4">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrito de Compras -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Los items del carrito se agregarán dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@sporfit.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/sporfit" target="_blank" title="Síguenos en Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sporfit" target="_blank" title="Síguenos en Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/sporfit" target="_blank" title="Síguenos en Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SPORFIT. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="store.js"></script>
+</body>
+</html> 

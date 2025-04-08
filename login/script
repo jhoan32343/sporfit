@@ -1,0 +1,71 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const registerForm = document.getElementById('registerForm');
+    const loginLink = document.getElementById('login-link');
+    
+    // Validación del formulario
+    registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Resetear mensajes de error
+        document.getElementById('name-error').textContent = '';
+        document.getElementById('email-error').textContent = '';
+        document.getElementById('password-error').textContent = '';
+        
+        // Obtener valores
+        const fullname = document.getElementById('fullname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        
+        let isValid = true;
+        
+        // Validar nombre
+        if (fullname === '') {
+            document.getElementById('name-error').textContent = 'Por favor ingrese su nombre completo';
+            isValid = false;
+        } else if (fullname.length < 3) {
+            document.getElementById('name-error').textContent = 'El nombre debe tener al menos 3 caracteres';
+            isValid = false;
+        }
+        
+        // Validar email
+        if (email === '') {
+            document.getElementById('email-error').textContent = 'Por favor ingrese su correo electrónico';
+            isValid = false;
+        } else if (!isValidEmail(email)) {
+            document.getElementById('email-error').textContent = 'Por favor ingrese un correo electrónico válido';
+            isValid = false;
+        }
+        
+        // Validar contraseña
+        if (password === '') {
+            document.getElementById('password-error').textContent = 'Por favor ingrese una contraseña';
+            isValid = false;
+        } else if (password.length < 6) {
+            document.getElementById('password-error').textContent = 'La contraseña debe tener al menos 6 caracteres';
+            isValid = false;
+        }
+        
+        // Si todo es válido, enviar el formulario (simulado)
+        if (isValid) {
+            // Aquí iría la lógica para enviar los datos al servidor
+            alert('Registro exitoso! Redirigiendo...');
+            // Simular redirección después de 1 segundo
+            setTimeout(() => {
+                window.location.href = 'dashboard.html'; // Cambiar por la página de destino real
+            }, 1000);
+        }
+    });
+    
+    // Función para validar email
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+    
+    // Manejar el enlace de login (simulado)
+    loginLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Redirigiendo a la página de inicio de sesión...');
+        // En una implementación real, cambiaría la vista o redirigiría
+    });
+});

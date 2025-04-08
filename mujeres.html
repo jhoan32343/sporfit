@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORFIT - Ropa para Mujeres</title>
+    <link rel="stylesheet" href="store.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SPORFIT</h1>
+            </div>
+            <div class="nav-links">
+                <a href="store.html">Inicio</a>
+                <a href="hombres.html">Hombres</a>
+                <a href="mujeres.html" class="active">Mujeres</a>
+                <a href="accesorios.html">Accesorios</a>
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" id="logout-btn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Moda Femenina</h2>
+                <p>Descubre nuestra colección exclusiva para mujeres</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Ropa para Mujeres</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300" alt="Leggings Deportivos">
+                    <div class="product-info">
+                        <h3>Leggings Deportivos</h3>
+                        <p class="price">$29.99</p>
+                        <button class="add-to-cart" data-id="m1">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300" alt="Top Deportivo">
+                    <div class="product-info">
+                        <h3>Top Deportivo</h3>
+                        <p class="price">$19.99</p>
+                        <button class="add-to-cart" data-id="m2">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300" alt="Conjunto Deportivo">
+                    <div class="product-info">
+                        <h3>Conjunto Deportivo</h3>
+                        <p class="price">$49.99</p>
+                        <button class="add-to-cart" data-id="m3">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300" alt="Chaqueta Deportiva">
+                    <div class="product-info">
+                        <h3>Chaqueta Deportiva</h3>
+                        <p class="price">$39.99</p>
+                        <button class="add-to-cart" data-id="m4">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrito de Compras -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Los items del carrito se agregarán dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@sporfit.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SPORFIT. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="store.js"></script>
+</body>
+</html> 
